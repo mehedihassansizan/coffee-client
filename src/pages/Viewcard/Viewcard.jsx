@@ -1,11 +1,11 @@
 import { FaArrowRight } from "react-icons/fa";
-import { Link, useLoaderData, useNavigate } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 
 const Viewcard = () => {
 
     const coffee = useLoaderData();
-    const { _id, name, quantity, supplier, taste, photo } = coffee;
+    const {name, quantity, supplier, taste, photo } = coffee;
 
   return (
     <div className=" bg-base-100 shadow-xl mb-12">
